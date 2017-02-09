@@ -1,0 +1,24 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid blue; }
+
+ul {
+  list-style: none; }
+
+.response {
+  display: inline-block;
+  float: right; }
+
+.navbar {
+  display: block;
+  float: left;
+  width: 100%; }
+
+.container {
+  background-color: #FAF9F5; }
+
+.product {
+  height: 140px;
+  width: 180px; }
