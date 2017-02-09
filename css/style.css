@@ -16,6 +16,14 @@ ul {
   float: left;
   width: 100%; }
 
+.nav {
+  height: 13px;
+  display: inline-block; }
+
+.nav-item {
+  display: inline;
+  float: left; }
+
 .container {
   background-color: #FAF9F5; }
 
