@@ -20,15 +20,21 @@ function getResults () {
  for (i=0; i < orangeRose.results.length; i++){
     var image = orangeRose.results[i].Images[0].url_170x135;
     var title = orangeRose.results[i].title;
-    var shop = orangeRose.results[i].shop_name;
+    var shop = orangeRose.results[i].Shop.shop_name;
     var price = orangeRose.results[i].price;
+    var link = orangeRose.results[i].url;
 
     var itemResult = `<div class="product">
 
-    image title shop price
+    <div class="image"><a href="link" ><img src="${image}"/></a></div>
+    <div class="title"><a href="#">${title}</a></div>
+    <div class="shop"><a href="#">${shop}</a>
+     <span class="price">${price}</span></div>
 
-    </div`
-  } $(".productGrid").append(itemResult);
+    </div>`
+
+    $(".productGrid").append(itemResult);
+  }
 }
 
 getResults();
