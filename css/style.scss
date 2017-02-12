@@ -3,6 +3,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
 }
 
 a {
@@ -18,30 +19,37 @@ ul {
   font-size: 300%;
   color: #F56400;
   font-family: serif;
+  display: inline;
 }
 
 .header {
+    border-bottom: 1px solid #E1E3DF;
+    padding-bottom: 20px;
   input {
-    font-size: 10pt;
+    font-size: 12pt;
     width: 30%;
-    display: inline-block;
+    display: inline;
     border-radius: 2px;
     margin-right: -5px;
-    padding: 4px;
+    padding: 6px;
+    color: lightgrey;
   }
 }
 
 .search {
-  font-size: 10pt;
+  font-size: 11pt;
   background-color: #34A8C4;
   color: white;
-  border-radius: 4px;
-  padding: 4px;
+  border-radius: 2px;
+  padding: 8px 15px;
+  border: 0;
 }
 
 .response {
-  display: inline-block;
+  display: inline;
   float: right;
+  font-size: 10pt;
+  color: #0192B5;
 }
 
 .header .navbar {
@@ -52,6 +60,8 @@ ul {
   display: block;
   float: left;
   width: 100%;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
 }
 
 .nav {
@@ -68,55 +78,98 @@ ul {
   padding: 0 5px;
 }
 
+.signIn {
+  border: 1px solid #0192B5;
+  padding: 10px 5px;
+  border-radius: 2px;
+}
+
 .sidebar {
-  width: 25%;
+  width: 20%;
+  height: 1271px;
   display: inline-block;
   float: left;
   font-size: 9pt;
+  padding: 17px;
+}
 
-  ul {
-    padding: 0;
-  }
+.resultsBar .searchResults {
+  border: 1px solid lightgrey;
+  background-color: white;
+  color: #0192B5;
 }
 
 .container {
   background-color: #FAF9F5;
 }
 
+.catResults {
+  padding-top: 13px;
+  display: inline-block;
+  font-size: 10pt;
+  color: #0192B5;
+}
+
 .productGrid {
-  width: 75%;
+  width: 976px;
+  height: 80%;
   display: inline-block;
   float: left;
 }
 
 .product {
-  height: 195px;
-  width: 233px;
+  height: 223.69px;
+  width: 222.5px;
   font-size: 9pt;
-  margin: 5px;;
-  padding: 5px;
+  margin: 1%;
   float: left;
   overflow: hidden;
+  border: .5px solid lightgrey;
+  background-color: white;
+  border-radius: 3px;
 
   img {
-    width: 233px;
-  }
+      width: 222.5px;
+      height: 176.69px;
+    }
+}
+
+.product:hover {
+    box-shadow: 0px 0px 2px 0px grey;
+    position: relative;
+}
+.sprite:hover:after {
+content:
+  url(/etsy-assets/hamburger.png);
+content:
+  url(/etsy-assets/heart.png);
+  display: block;
+  position: absolute;
+  left: 123px;
+  top: 56px;
 }
 
 .image {
-  width: 222px;
-  height: 142px;
+  width: 222.5px;
+  height: 176.69px;
   display: block;
   overflow: hidden;
+  padding: 0;
 }
 
 .title {
-  float: left;
+  display: inline-block;
+  padding: 5px;
+  width: 222px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  display: block;
-  padding: 5px 0;
+  float: left;
+}
+
+.shop {
+  color: #9A9A9A;
+  padding: 3px;
 }
 
 .price {
@@ -131,4 +184,20 @@ label {
 
 .imageHover {
   visibility: hidden;
+}
+
+.carousel {
+  display: inline-block;
+  margin: 0 25%;
+
+  li {
+  border: 1px solid lightgrey;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+}
+
+#ad-copy {
+  display: inline-block;
+  margin: 0 25%;
 }
