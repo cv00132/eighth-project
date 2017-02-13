@@ -17,3 +17,6 @@ Javascript/jQuery
 1. Used template literals to directly propagate information onto the HTML
 2. Broke up information into individual variables to better manage data flowers
 3. Made use of functions to access important information from the data page and deploy directly on HTML
+
+
+cv00132.github.io/eighth-project
