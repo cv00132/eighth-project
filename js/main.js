@@ -11,7 +11,7 @@ function getResults () {
     <div class="image">
     <a href="link">
     <img src="${image}"/>
-    <span class="sprite"></span>
+    <div class="sprite"></div>
     </a>
     </div>
     <div class="title">
@@ -31,6 +31,7 @@ function getResults () {
 getResults();
 
 $("#ad-copy").html("Get top trends and fresh editors' picks in your inbox with Etsy Finds.")
+$("#number-results").html("(" + orangeRose.count + " Results)");
 // var productPrice = $(orangeRose.map(function(item) {
 //   return item.price;
 // }))
