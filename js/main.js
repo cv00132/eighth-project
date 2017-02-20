@@ -9,7 +9,7 @@ function getResults () {
     var itemResult = `<div class="product">
 
     <div class="image">
-    <a href="link">
+    <a href="${link}">
     <img src="${image}"/>
     <div class="sprite"></div>
     </a>
@@ -18,7 +18,7 @@ function getResults () {
     <a href="#">${title}</a>
     </div>
     <div class="shop">
-    <a href="#">${shop}</a>
+    <a href="https://www.etsy.com/shop/${shop}">${shop}</a>
      <span class="price">$${price}</span>
      </div>
 
